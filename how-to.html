@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+   <head>
+      <title>App</title>
+      <link href="how-to.css" rel="stylesheet" />
+
+      <script>
+          var i = 0;
+          function addOne(){
+            console.log(i)
+            i = i + 1
+            if(i == 12){
+                i = 0
+            }
+          }
+
+          function minusOne(){
+            console.log(i)
+            i = i - 1
+            if(i == -1){
+                i = 11
+            }
+          }
+          function change_css(){
+            document.getElementById('container').style.backgroundImage = "url('"+i+".png')";
+        }
+      </script>
+
+   </head>
+
+   <body>
+    <div class="container" id="container">
+
+    	<div class="topBorder"></div>
+      <a href="index.html"><div class="button">Home</div></a>
+      <div class="divider"></div>
+
+
+      <div class="bottomBorder"></div>
+      <div class="back button" onclick="minusOne(); change_css();"><p>Back</p></div>
+      <div class="next button" onclick="addOne(); change_css();"><p>Next</p></div>
+
+    </div>
+   </body>
+
+</html>
