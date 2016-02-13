@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "fibonacci.app"
         versionCode = "10" 
-        version     = "1.0.0" >
+        version     = "1.0.1" >
         
     <name>Fibonacci</name>
     
@@ -12,7 +12,7 @@
     </description>
     
     
-    
+    <preference name="permissions" value="none"/>
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="true" />
     <icon src="icon.png" />
